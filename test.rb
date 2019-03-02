@@ -11,7 +11,7 @@ module Shrug
     end
 
     def assert_equals(left, right)
-      human_response = "#{left} != #{right}"
+      human_response = "Expected #{left} to equal #{right}"
       TestResponse.new(left == right, human_response)
     end
 
